@@ -16,7 +16,7 @@ LazyVim includes a built-in toggle keymap under the UI menu (`<leader>u`):
 <leader>uc
 ```
 
-* **Default Key Combo:** `Space` $ightarrow$ `u` $ightarrow$ `c` (in Normal mode)
+* **Default Key Combo:** `Space` -> `u` -> `c` (in Normal mode)
 * **Action:** Toggles Neovim's `conceallevel` between `0` (off/show all) and `2` or `3` (on/hide concealed elements).
 * **Cursor Exception:** By default in Neovim/LazyVim, when your cursor moves onto a line containing concealed text, the hidden characters will temporarily reveal themselves so you can edit them. When the cursor moves away, they conceal again. `<leader>uc` turns this behavior off entirely for the current buffer.
 
