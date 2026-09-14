@@ -91,6 +91,7 @@ vim.api.nvim_create_autocmd("FileType", {
 In LazyVim, certain UI plugins control their own rendering and may override `conceallevel` automatically:
 
 ### 1. `render-markdown.nvim`
+
 LazyVim often includes `render-markdown.nvim` for rich Markdown rendering inside Neovim. This plugin dynamically sets `conceallevel = 2`.
 
 To configure `render-markdown.nvim` so it doesn't conceal backticks, edit or create `~/.config/nvim/lua/plugins/markdown.lua`:
@@ -110,4 +111,5 @@ return {
 ```
 
 ### 2. Neovim Treesitter
+
 Treesitter parser rules specify which syntax nodes (such as JSDoc tags `@param` or code blocks) are marked as `@conceal`. If you want to customize Treesitter conceal highlights, you can disable conceal query captures in your plugin spec.
